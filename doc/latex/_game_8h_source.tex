@@ -1,0 +1,64 @@
+\doxysection{Game.\+h}
+\hypertarget{_game_8h_source}{}\label{_game_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ tinti\ on\ 2023-\/10-\/12.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <SFML/Graphics.hpp>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifndef\ PROJEKTT\_GAME\_H}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ PROJEKTT\_GAME\_H}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_game}{Game}}\ \{}
+\DoxyCodeLine{00017\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_game_ad59df6562a58a614fda24622d3715b65}{Game}}();}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_adb05b20574551a26f8cf1dc664782790}{Start}}();}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_aea7a0567e5f8b67498ccc62f676d2c7f}{CheckMouseInputInMenu}}();}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_a9f99e13f6767dd162a6a543c2afaa87c}{CheckMouseInputInGame}}();}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_a6d3e95998d7a7b0b4c923ec2d8a73c7e}{CheckMouseInput}}();}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_a0e728b40cac9f8f8fc778c6fbd3ffa1d}{HandleEvent}}();}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_a3488414ac42e9446e1dfe53e454f5df8}{Bot}}();}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_ab3350047cdbcc48a9f93543163f86c61}{ResetGame}}();}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_a5dbdefe51992b97fdd0e7d5fe052adec}{SetWinner}}(\textcolor{keywordtype}{int}\ winner);}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_game_aaef0a80cdec051a3578ef148f0f3f45f}{GameIsOn}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ board[3][3]);}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_game_a3b07d4e0dbf9849637cea89e0d5bda23}{CheckHorizontal}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ board[3][3]);}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_game_ae2a267957c2f345edd98a8c6b4ca7acd}{CheckFirstDiagonal}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ board[3][3]);}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00105\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_game_a9b1c589271be4c3a26a54fb9b48eea5c}{CheckSecondDiagonal}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ board[3][3]);}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00112\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_game_ad5210e6df6fc5de452c61d4c47428093}{CheckVertical}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ board[3][3]);}
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00119\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_game_a2cd9ed8938e779db6dee0e5dbc6534d1}{Winner}}();}
+\DoxyCodeLine{00120\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00121\ \ \ \ \ sf::RenderWindow\ game;}
+\DoxyCodeLine{00122\ \ \ \ \ std::string\ BaseDirectory\ =\ \textcolor{stringliteral}{"{}C:/Users/tinti/CLionProjects/Metodik/Projektt/"{}};}
+\DoxyCodeLine{00123\ \ \ \ \ sf::Texture\ field,\ x\_texture,\ zero\_texture;}
+\DoxyCodeLine{00124\ \ \ \ \ sf::Texture\ player\_mark,\ enemy\_mark;}
+\DoxyCodeLine{00125\ \ \ \ \ sf::Font\ roboto\_bold;}
+\DoxyCodeLine{00126\ \ \ \ \ sf::Sprite\ board\_sprite;}
+\DoxyCodeLine{00127\ \ \ \ \ sf::Text\ game\_status;}
+\DoxyCodeLine{00128\ \ \ \ \ sf::FloatRect\ gs\_bounds;}
+\DoxyCodeLine{00129\ }
+\DoxyCodeLine{00130\ \ \ \ \ sf::RectangleShape\ square[3][3];}
+\DoxyCodeLine{00131\ }
+\DoxyCodeLine{00132\ \ \ \ \ sf::Event\ \textcolor{keyword}{event}\{\};}
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00134\ \ \ \ \ \textcolor{keywordtype}{int}\ matrix[3][3]\{\};}
+\DoxyCodeLine{00135\ \};}
+\DoxyCodeLine{00136\ }
+\DoxyCodeLine{00137\ }
+\DoxyCodeLine{00138\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//PROJEKTT\_GAME\_H}}
+
+\end{DoxyCode}

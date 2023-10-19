@@ -1,0 +1,43 @@
+\doxysection{Menu.\+h}
+\hypertarget{_menu_8h_source}{}\label{_menu_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ tinti\ on\ 2023-\/10-\/15.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <SFML/Graphics.hpp>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifndef\ PROJEKTT\_MENU\_H}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ PROJEKTT\_MENU\_H}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_menu}{Menu}}\ \{}
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_menu_ad466dd83355124a6ed958430450bfe94}{Menu}}();}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_menu_a98ba1ceebfd14996179c5111e09c31bd}{ShowMenu}}();}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_menu_a9b763ee1c52d1e67d0a94be99a1df437}{HideMenu}}();}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_menu_ac46cb4fc374747f1edfb287c90b5425f}{IsMenuShowing}}();}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00049\ \ \ \ \ sf::Text\ \mbox{\hyperlink{class_menu_ab20b8022d717b4d703a91c77f27bc721}{ReturnText}}();}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00056\ \ \ \ \ sf::RectangleShape\ \mbox{\hyperlink{class_menu_ab20e0136fb8a41a55fb2c97332175600}{ReturnXButton}}(),\ ReturnZeroButton();}
+\DoxyCodeLine{00057\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{bool}\ show\_menu\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00059\ \ \ \ \ std::string\ BaseDirectory\ =\ \textcolor{stringliteral}{"{}C:/Users/tinti/CLionProjects/Metodik/Projektt/"{}};}
+\DoxyCodeLine{00060\ \ \ \ \ sf::Font\ roboto\_bold;}
+\DoxyCodeLine{00061\ \ \ \ \ sf::Text\ play\_as,\ x\_text,\ zero\_text;}
+\DoxyCodeLine{00062\ \ \ \ \ sf::RectangleShape\ x,\ zero;}
+\DoxyCodeLine{00063\ \ \ \ \ sf::Texture\ x\_texture,\ zero\_texture;}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \};}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//PROJEKTT\_MENU\_H}}
+
+\end{DoxyCode}
